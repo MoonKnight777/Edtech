@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divin-ed</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/aboutus.css">
+
+    <!-- css for scroll  -->
+
+    <link rel="stylesheet" href="css/locomotive-scroll.css">
+
+    <!-- css for phone -->
+
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/phone.css">
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Mainsite -->
+    
+    <div class="main">
+        
+        <!-- navigation bar -->
+        
+        <header id="nav" class="topbar">
+            <div class="logo">
+                <img src="img/logo2.png" alt="DIVINE" class="imglogo">
+            </div>
+            <ul class="navbar">
+                <li class="items caps"><a href="home.html">home</a></li>
+                <li class="items caps"><a href="courses.html">courses</a></li>
+                <li class="items caps"><a href="aboutus.html">about us</a></li>
+                <li class="items caps"><a href="contact.html">contact us</a></li>
+                <button class="loginbtnhome" onclick="loginbtnclick()">LOG IN</button>
+            </ul>
+            <ul class="sidebar">
+                <li class="items caps"><a href="home.html">home</a></li>
+                <li class="items caps"><a href="courses.html">courses</a></li>
+                <li class="items caps"><a href="aboutus.html">about us</a></li>
+                <li class="items caps"><a href="contact.html">contact us</a></li>
+                <button class="loginbtnhome" onclick="loginbtnclick()">LOG IN</button>
+            </ul>
+            <div class="hamburger" onclick="sidebarin()">
+                <div class="burger-in"></div>
+                <div class="burger-in"></div>
+                <div class="burger-in"></div>
+            </div>
+            <div class="hamburgerclose" onclick="sidebarout()">
+                <i class='bx bx-x'></i>
+            </div>
+        </header>
+
+        <div id="scroller" class="scroller">
+            <div class="content">
+
+                <!-- welcome preview -->
+
+                <div class="landingpage">
+                    <h1 class="mainh1 caps">Welcome to Divin-ed</h1>
+                    <p class="mainp">We aim to share divine knowledge and educate everyone. We teach our students in an
+                        interative
+                        way,embeding practical as well as theoretical knowledge.</p>
+                    <button class="joinbtn">Join now</button>
+                    <div class="quote" media="screen and (max-width: 600px)"><p>"Your Path to Smarter Learning"</p></div>
+                </div>
+            </div>
+
+
+            <!-- courses setup -->
+
+
+            <div class="courses">
+
+                <div class="courseshead">
+                    <h1>Our courses</h1>
+                </div>
+
+                <div class="mathsec subject">
+                    <img src="img/geometry-1044090_1280.jpg" alt="">
+                    <h1 class="subhead">Advance Mathematics</h1>
+                    <ul class="details">
+                        <li class="eachdetail">Duration: 22hours</li>
+                        <li class="eachdetail">Assignmets: 3</li>
+                        <li class="eachdetail">Credit: 5points</li>
+                        <li class="eachdetail">Mentor: Dr.MMMMMM</li>
+                    </ul>
+                </div>
+
+                <div class="physec subject">
+                    <img src="img/physics-6114817_1280.jpg" alt="">
+                    <h1 class="subhead">Advance Physics</h1>
+                    <ul class="details">
+                        <li class="eachdetail">Duration: 22hours</li>
+                        <li class="eachdetail">Assignmets: 3</li>
+                        <li class="eachdetail">Credit: 5points</li>
+                        <li class="eachdetail">Mentor: Dr.MMMMMM</li>
+                    </ul>
+                </div>
+
+                <div class="chemsec subject">
+                    <img src="img/periodic-table-3962844_1280.jpg" alt="">
+                    <h1 class="subhead">Advance Chemistry</h1>
+                    <ul class="details">
+                        <li class="eachdetail">Duration: 22hours</li>
+                        <li class="eachdetail">Assignmets: 3</li>
+                        <li class="eachdetail">Credit: 5points</li>
+                        <li class="eachdetail">Mentor: Dr.MMMMMM</li>
+                    </ul>
+                </div>
+
+                <div class="webdsec subject">
+                    <img src="img/geometry-1044090_1280.jpg" alt="">
+                    <h1 class="subhead">Web Designing</h1>
+                    <ul class="details">
+                        <li class="eachdetail">Duration: 22hours</li>
+                        <li class="eachdetail">Assignmets: 3</li>
+                        <li class="eachdetail">Credit: 5points</li>
+                        <li class="eachdetail">Mentor: Dr.MMMMMM</li>
+                    </ul>
+                </div>
+
+                <div class="ecsec subject">
+                    <img src="img/physics-6114817_1280.jpg" alt="">
+                    <h1 class="subhead">English Communication</h1>
+                    <ul class="details">
+                        <li class="eachdetail">Duration: 22hours</li>
+                        <li class="eachdetail">Assignmets: 3</li>
+                        <li class="eachdetail">Credit: 5points</li>
+                        <li class="eachdetail">Mentor: Dr.MMMMMM</li>
+                    </ul>
+                </div>
+
+                <div class="pdsec subject">
+                    <img src="img/periodic-table-3962844_1280.jpg" alt="">
+                    <h1 class="subhead">Personality Development</h1>
+                    <ul class="details">
+                        <li class="eachdetail">Duration: 22hours</li>
+                        <li class="eachdetail">Assignmets: 3</li>
+                        <li class="eachdetail">Credit: 5points</li>
+                        <li class="eachdetail">Mentor: Dr.MMMMMM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- About us -->
+
+            <div class="aboutus">
+                <div class="mainabushead">About us</div>
+                <div class="aboutusbody">
+                    <div class="aboutuscontent">
+                        <div class="abustextbox">
+                            <div class="abusconthead">
+                                <img src="img/logo2.png" alt="DIVINE" class="imglogo">
+                                <h1>Divine Educations limited</h1>
+                            </div>
+                            <div class="abuscontbody">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, autem aliquid nam
+                                    veniam
+                                    doloremque libero cupiditate recusandae incidunt quas doloribus ipsa illum hic sed
+                                    dolorum
+                                    sapiente eos voluptas molestias quae facilis accusantium vitae dolores, odio et
+                                    distinctio?
+                                    Incidunt, iusto qui!</p>
+                            </div>
+                        </div>
+                        <div class="abusconticons">
+                            <div class="icontagcontainer">
+                                <i class='bx bxl-instagram-alt instaicon' undefined></i>
+                                <span class="icontext">@Divined</span>
+                            </div>
+                            <div class="icontagcontainer">
+                                <i class='bx bxl-facebook-circle fbicon'></i>
+                                <span class="icontext">DIvineddd</span>
+                            </div>
+                            <div class="icontagcontainer">
+                                <i class='bx bxl-youtube yticon '></i>
+                                <span class="icontext">Diviend</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aboutusimg">
+                        <img src="img/book-863418_1280.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- login box setup -->
+
+
+            <div class="body2">
+                <div class="logincontainer">
+                    <form novalidate autocomplete="off">
+                        <h1>Log in</h1>
+                        <button class="loginbackbtn" onclick="backbtnclick()" type="button">
+                            <i class='bx bx-x'></i>
+                        </button>
+                        <div class="inputbox">
+                            <i class='bx bx-user icon'></i>
+                            <input type="text" required>
+                            <label>Username</label>
+                        </div>
+                        <div class="inputbox">
+                            <i class='bx bx-lock-alt icon'></i>
+                            <input type="password" required formnovalidate>
+                            <label class="shift">Password</label>
+                        </div>
+                        <div class="rememberforgot">
+                            <div class="rememberme">
+                                <input type="checkbox" name="rememberme" id="">
+                                <label>Remember me</label>
+                            </div>
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <button type="submit" class="loginbtn">Login</button>
+                        <div class="register">
+                            <p>Don't have an account?<a href="#">Register now.</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Custom JS  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="js/loginboxin.js"></script>
+
+</body>
+
+</html>

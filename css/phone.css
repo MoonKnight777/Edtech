@@ -1,0 +1,229 @@
+.topbar {
+    padding: 5vw;
+    height: 40vw;
+    background-color: rgba(39, 0, 0, 0.301);
+    /* position: f; */
+}
+
+#nav {
+    height: 21vw;
+}
+#nav::after {
+    content: "";
+    height: 0.5px;
+    width: 93%;
+    margin: auto;
+    background-color: #dadada3f;
+    border-radius: 30px;
+    position: absolute; 
+    bottom: 0;
+    transition: 500ms ease-in-out;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.items {
+    list-style: none;
+    position: relative;
+    margin: 2vw 2vw;
+}
+
+.imglogo {
+    height: 10vw;
+    width: 12vw;
+}
+
+.hamburger {
+    display: block;
+}
+
+/* 3.NAVBTNS */
+.navbar {
+    display: none;
+}
+
+.items {
+    padding: 1vw 2vw;
+}
+
+.items:hover {
+    background: rgba(165, 42, 42, 0.411);
+    border-radius: 5px;
+}
+
+
+.items::after {
+    display: none;
+}
+
+
+.loginbtnhome {
+    width: 90%;
+    height: 12vw;
+    margin: 4vw auto;
+    border-radius: 0.5vw;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.loginbtnhome:hover {
+    background-color: #cf2d2ae0;
+}
+
+
+
+/* landing page */
+
+.landingpage {
+    width: 100%;
+    height: 100vh;
+    padding: 2vw 7vw;
+    /* display: block; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.mainh1 {
+    margin-top: 30vw;
+    text-align: left;
+    font-size: 12vw;
+    width: 100%;
+
+}
+
+.mainp {
+    width: 90%;
+    text-align: left;
+    font-weight: 500;
+    font-size: 4vw;
+    margin: 1vw 0;
+    line-height: normal;
+    text-wrap:stable;
+}
+
+
+.joinbtn {
+    display: inline-block;
+    width: 50vw;
+    height: 12vw;
+    margin: 0 0;
+    color: var(--lightcolor);
+    border-radius: 5px;
+    font-size: 5vw;
+    font-weight: 500;
+    border: 0.5px solid var(--darkcolor1);
+    background: var(--darkcolor2);
+    transition: all 300ms;
+    margin-top: 5vw;
+
+}
+
+.joinbtn:hover {
+    background-color: var(--darkcolor1);
+    transform: scale(1.03);
+}
+
+.quote {
+    display: block;
+    margin: 10vw 0;
+    padding: 10vw 0;
+    font-size: 9vw;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-stretch: expanded;
+    text-wrap:pretty;
+    -webkit-text-stroke:0.5px;
+    -webkit-text-stroke-color: #810000e0;
+    text-shadow: 2px 2px 9px rgb(248, 133, 2);
+    background: #200a0a56;
+    background-blend-mode:difference;
+    border-radius: 10px;
+
+}
+
+/* courses */
+
+.courses {
+    overflow: hidden;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'courseshead'
+    'mathsec' 
+    'physec'
+    'chemsec'
+    'webdsec'
+    'ecsec'
+    'pdsec'
+;
+margin: 0 auto;
+}
+
+.abustextbox{
+    background-color: #6464644d;
+    padding: 7vw;
+    border-radius: 8px;
+}
+
+.aboutusimg{
+    display: none;
+}
+
+.aboutusbody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 6vw 6vw;
+    padding-bottom: 40px;
+}
+
+.mainabushead {
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.aboutuscontent {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.abusconthead {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+
+.abusconthead img{
+    height: 16vw;
+    width: 18vw;
+}
+
+.abusconthead h1 {
+    font-size: 6vw;
+}
+
+.abusconticons {
+    padding: 0.1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.icontext{
+    margin: 0 .8rem;
+}
+
+.icontagcontainer {
+    margin: 15px 20px;
+}

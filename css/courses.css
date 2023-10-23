@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Rajdhani:wght@400;500&family=Sofia+Sans+Extra+Condensed:wght@1;200&display=swap');
+
+.courses {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        'courseshead courseshead courseshead'
+        'mathsec physec chemsec'
+        'webdsec ecsec pdsec'
+    ;
+    place-items: center;
+    padding-bottom: 5vh;
+}
+
+.courses::before {
+    content: "";
+    background: url(../img/bg4.jpg) rgba(0, 0, 0, 0.85) no-repeat center center/cover;
+    background-blend-mode: darken;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.courseshead {
+    margin-top: 2rem;
+    grid-area: courseshead;
+    /* background-color: chocolate; */
+    /* border: 2px solid blue; */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.subject {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 273px;
+    background-color: #0c0c0cad;
+    border: none;
+    margin: 2rem 0.2rem;
+    box-shadow: inset 5px 5px 20px #c5e1a538;
+    transition: all 50ms ease-in-out;
+}
+
+.subject:hover {
+    transform: scale(1.01);
+}
+
+.subject img {
+    height: 175px;
+    width: 274px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.subhead {
+    font-weight: 700;
+    font-size: large;
+    margin: 10px 25px;
+}
+
+.details {
+    margin: 15px 25px;
+    font-size: 15px;
+}
+
+
+.mathsec {
+    grid-area: mathsec;
+
+}
+
+.physec {
+    grid-area: physec;
+
+}
+
+.chemsec {
+    grid-area: chemsec;
+
+}
+
+.webdsec {
+    grid-area: webdsec;
+
+}
+
+.ecsec {
+    grid-area: ecsec;
+
+}
+
+.pdsec {
+    grid-area: pdsec;
+
+}

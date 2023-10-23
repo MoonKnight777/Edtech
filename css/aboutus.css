@@ -1,0 +1,102 @@
+.aboutus{
+    box-shadow: inset 0 0 20px #c5e1a538;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+.aboutus::before{
+    content: "";
+    background: url(../img/bg5.jpg) rgba(0, 0, 0, 0.85) no-repeat center center/cover;
+    background-blend-mode: darken;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.aboutusbody {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 45px;
+    padding-bottom: 40px;
+}
+
+.mainabushead {
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.aboutuscontent {
+    box-sizing: border-box;
+    width: 50rem;
+}
+
+.abusconthead {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.aboutusimg img {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutusimg {
+    border-radius: 7px;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-self: flex-start;
+    height: 289px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.abusconticons {
+    padding: 0.5rem 0;
+    display: flex;
+}
+
+.abusconticons i {
+    font-size: xx-large;
+}
+
+.icontagcontainer {
+
+    display: flex;
+    align-items: center;
+    margin: 15px 10px;
+    box-sizing: border-box;
+}
+
+.yticon {
+    color: red;
+}
+
+.instaicon {
+    color: palevioletred;
+}
+
+.fbicon {
+    color: blue;
+}
+
+.icontext{
+    margin: 0 1.5rem;
+}
+
+.abustextbox{
+    background-color: #8080800d;
+    padding: 15px;
+    border-radius: 8px;
+}

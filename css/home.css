@@ -1,0 +1,244 @@
+:root {
+    --lightcolor: #ffebee;
+    --darkcolor1: #f44336;
+    --darkcolor2: #e53935;
+    --midcolor1: #fbe9e7;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    color: var(--midcolor1);
+    background: url("../img/bg3.jpg") rgba(0, 0, 0, 0.85) no-repeat center center/cover;
+    background-blend-mode: darken;
+    z-index: -1000;
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    width: 3px;
+    background: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(77, 77, 77, 0.2);
+    border-radius: 50px;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+/* NAVIGATION BAR */
+
+/* 1. LOGO AND NAVBTN BLOCK*/
+.topbar {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.301);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    z-index: 99999999;
+    padding: 1vw 0;
+}
+
+#nav{
+    height: 7vw;
+}
+
+/* 2.LOGO*/
+.logo {
+    margin: 0.5vw 2.5vw;
+}
+
+.imglogo {
+    height: 4vw;
+    width: 5vw;
+}
+
+/* 3.NAVBTNS */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.items {
+    list-style: none;
+    position: relative;
+    margin: 0 2vw;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+.items::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: var(--darkcolor1);
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 500ms ease-in-out;
+}
+
+.items:hover::after {
+    width: 100%;
+}
+
+.items a:active::after {
+    width: 100%;
+}
+/* sidebar */
+.sidebar{
+    position: absolute;
+    top:0;
+    right: -300px;
+    height: 100vh;
+    width: 315px;
+    padding: 12.5vw 3vw;
+    display: none;
+    flex-direction: column;
+    justify-content:flex-start;
+    background: rgba(58, 19, 19, 0.945);
+}
+
+.sidebar li a{
+    font-size: 5vw;
+}
+
+.hamburger{
+    display: none;
+}
+
+.burger-in{
+    height: 2.1px;
+    width: 22px;
+    background: #fff;
+    margin: 4px;
+}
+
+.hamburgerclose{
+    font-size: 10vw;
+    font-weight: 500;
+    display: none;
+    z-index: 6;
+}
+
+.quote{
+    display: none;
+}
+/* UTILITY CLASSES */
+.caps {
+    text-transform: uppercase;
+}
+
+li{
+    list-style: none;
+}
+
+/* Main-content */
+.content::before{
+    content: "";
+    background: url(../img/bg3.jpg) rgba(0, 0, 0, 0.85) no-repeat center center/cover;
+    background-blend-mode: darken;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content{
+    width: 100%;
+}
+
+.landingpage{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainh1 {
+    text-align: center;
+    font-size: 7vw;
+
+}
+
+.mainp {
+    width: 60vw;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.4vw;
+    margin: 1vw auto;
+    line-height: 2.4vw;
+
+
+}
+    
+
+.joinbtn {
+    display: inline-block;
+    width: 15vw;
+    height: 4vw;
+    margin: 0 auto;
+    color: var(--lightcolor);
+    border-radius: 332px;
+    font-size: 1.5vw;
+    font-weight: 400;
+    border: 0.5px solid var(--darkcolor1);
+    background: transparent;
+    transition: all 300ms;
+    margin-top: 1.5vw;
+
+
+}
+
+.joinbtn:hover {
+    background-color: var(--darkcolor2);
+    transform: scale(1.03);
+}
+
+.loginbtnhome {
+    width: 8vw;
+    height: 3vw;
+    margin: 0 20px;
+    margin-right: 2vw;
+    color: white;
+    border-radius: 0.25vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    border: transparent;
+    background-color: var(--darkcolor1);
+    transition: background-color 0.7s;
+}
+
+.loginbtnhome:hover {
+    background-color: var(--darkcolor2);
+}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&family=Rajdhani:wght@400;500&family=Sofia+Sans+Extra+Condensed:wght@1;200&display=swap');
+
+/* 
+
+  font-family: 'Poppins', sans-serif;
+font-family: 'Sofia Sans Extra Condensed', sans-serif; 
+font-family: 'Rajdhani', sans-serif;
+
+*/
+
+
+/* general setup */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Poppins',sans-serif;
+}
+
+:root{
+    --primarycolor:brown;
+    --secondarycolor:rgb(253, 192, 192);
+}
+.body2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transform: scale(0);
+}
+
+/* login box styling */
+
+.logincontainer{
+    margin-top: 7vw;
+    color: var(--secondarycolor);
+    border: 1px solid var(--primarycolor) ;
+    border-radius: 10px;
+    height: 24rem;
+    width: 22rem;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(30px);
+    box-shadow: inset 1px -1px 20px 10px #a52a2a45;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+form{
+    width: 100%;
+    padding: 20px;
+}
+
+.logincontainer h1{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.inputbox{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 5px;
+    outline: none;
+    border-bottom: 2px solid var(--primarycolor);
+    margin: 30px 0;
+}
+
+.inputbox  label{
+    font-size: 0.85rem;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    transform: translateY(25%);
+    pointer-events: none;
+    transition: 200ms;
+    /* z-index: -1; */
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    transform: translateY(-110%);
+}
+
+.inputbox .icon{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    transform: translateY(50%);
+}
+
+.inputbox input{
+    color: var(--secondarycolor);
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 10px;
+    width: 90%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+.rememberforgot{
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    accent-color: var(--primarycolor);
+}
+
+.rememberforgot a{
+    text-decoration: none;
+    color: var(--secondarycolor);
+}
+
+.rememberforgot a:hover{
+    text-decoration: underline;
+}
+
+.loginbtn{
+    color: var(--secondarycolor);
+    background: var(--primarycolor);
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 200ms;
+}
+
+.loginbtn:hover{
+    background-color: rgb(109, 32, 32);
+}
+
+.register{
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 0.02rem;
+    margin: 5px 0;
+}
+.register a{
+text-decoration: none;
+color: rgb(211, 77, 77);
+}
+
+.register a:hover{
+    font-weight: bold;
+
+}
+
+.loginbackbtn{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    width: 2.3rem;
+    height: 2.3rem;
+    background-color: brown;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--primarybg);
+    font-size: 2rem;
+    border-bottom-left-radius: 18px;
+}
