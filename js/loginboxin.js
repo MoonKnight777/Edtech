@@ -19,6 +19,16 @@ function loginbtnclick() {
         duration: 0.2,
         delay: - 0.2
     })
+    tl.to(".sidebar", {
+        right: "-300px",
+        display: "none",
+        duration: 0.1
+    })
+    tl.to(".hamburgerclose", {
+        display: 'none',
+        duration: "10ms",
+        delay: 0.05
+    })
     tl.to(".body2", {
         display: "flex",
         duration: 0.2,
@@ -38,7 +48,12 @@ function backbtnclick() {
         duration: 0.2,
         scale: 0
     })
-
+    if (w < 600) {
+        tl.to(".hamburger", {
+            display: 'block',
+            duration: "1ms"
+        })
+    }
     tl.to(".landingpage", {
         display: "flex",
         opacity: 1,
@@ -55,11 +70,11 @@ function backbtnclick() {
         duration: 0.1,
     })
 
+
     console.log("Process done")
 }
 let w = window.innerWidth;
 console.log(w);
-console.log(window.innerWidth);
 if (w > 600) {
     gsap.to("#nav", {
         opacity: 1,
@@ -86,11 +101,12 @@ else if (w < 600) {
             trigger: "#nav",
             scroller: "body",
             start: "top -5 %",
-            scrub: true}
-        })
-        console.log("less than 600");
+            scrub: true
+        }
+    })
+    console.log("less than 600");
 
-    }
+}
 
 
 gsap.from(".landingpage", {
